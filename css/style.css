@@ -2333,3 +2333,75 @@ ol.comment-list li .children li {
 [data-overlay-light="10"]:before {
     opacity: 1;
 }
+
+/* ===== Mobile polish fixes ===== */
+@media screen and (max-width: 768px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    .container-fluid {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .bg-fixed {
+        background-attachment: scroll;
+    }
+    .pwe-nav-toggle {
+        margin: 12px;
+    }
+    #pwe-aside {
+        width: min(85vw, 270px);
+        padding: 30px 20px;
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    body.offcanvason #pwe-aside {
+        width: min(85vw, 270px);
+        transform: translateX(0);
+    }
+    body.offcanvason #pwe-main,
+    body.offcanvason .pwe-nav-toggle {
+        -moz-transform: translateX(min(85vw, 270px));
+        -webkit-transform: translateX(min(85vw, 270px));
+        -ms-transform: translateX(min(85vw, 270px));
+        -o-transform: translateX(min(85vw, 270px));
+        transform: translateX(min(85vw, 270px));
+    }
+    #pwe-hero .flexslider .slider-text {
+        min-height: auto;
+    }
+    #pwe-hero .flexslider .slider-text > .slider-text-inner {
+        min-height: auto;
+        padding: 1.25em;
+    }
+    #pwe-hero .flexslider .slider-text > .slider-text-inner .desc {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        padding: 20px 15px;
+    }
+    #pwe-hero .flexslider .slider-text > .slider-text-inner h6 {
+        font-size: 26px;
+    }
+    #pwe-hero .flexslider .slider-text > .slider-text-inner h1 {
+        font-size: 24px;
+        line-height: 1.25em;
+    }
+    .banner-head-padding {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    #pwe-hero .flexslider .slides.home-mobile-swap li:nth-child(1) {
+        background-image: url("../images/slider/new-style/01.jpg") !important;
+    }
+    #pwe-hero .flexslider .slides.home-mobile-swap li:nth-child(2) {
+        background-image: url("../images/slider/new-style/02.jpg") !important;
+    }
+    #pwe-hero .flexslider .slides.home-mobile-swap li:nth-child(3) {
+        background-image: url("../images/slider/new-style/03.jpg") !important;
+    }
+}
