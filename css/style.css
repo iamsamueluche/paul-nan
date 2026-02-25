@@ -1563,18 +1563,42 @@ button.mfp-arrow {
     left: 15px;
     background: #000;
     color: #fff;
-    padding: 10px 15px;
+    padding: 10px 14px;
+    min-width: 64px;
     text-align: center;
+}
+.blog .item .post-img .date a {
+    color: #fff;
+    line-height: 1;
 }
 .blog .item .post-img .date span {
     font-family: TuesdayNight;
     display: block;
     font-size: 20px;
+    line-height: 1;
 }
 .blog .item .post-img .date i {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     display: block;
-    font-size: 20px;
+    font-size: 22px;
+    line-height: 1.1;
+}
+@media screen and (max-width: 768px) {
+    .blog .item .post-img .date {
+        top: 12px;
+        left: 12px;
+        padding: 8px 12px;
+        min-width: 58px;
+    }
+    .blog .item .post-img .date span {
+        font-size: 18px;
+    }
+    .blog .item .post-img .date i {
+        font-size: 20px;
+    }
 }
 .blog .item .content {
     padding: 20px 20px 30px 20px;
@@ -2371,18 +2395,40 @@ ol.comment-list li .children li {
         -o-transform: translateX(min(85vw, 270px));
         transform: translateX(min(85vw, 270px));
     }
-    #pwe-hero .flexslider .slider-text {
+    #pwe-hero {
+        min-height: 0;
+    }
+    #pwe-hero .js-fullheight {
+        height: auto !important;
+        min-height: 0 !important;
+    }
+    #pwe-hero .flexslider .slides li {
         min-height: auto;
+        background-size: contain !important;
+        background-repeat: no-repeat;
+        background-position: center top !important;
+        background-color: #fff;
+        -webkit-animation: none;
+        animation: none;
+    }
+    #pwe-hero .flexslider .slider-text {
+        display: block;
+        min-height: auto;
+        padding: 0;
     }
     #pwe-hero .flexslider .slider-text > .slider-text-inner {
+        display: block;
         min-height: auto;
-        padding: 1.25em;
+        padding: clamp(190px, 66vw, 290px) 12px 10px 12px;
     }
     #pwe-hero .flexslider .slider-text > .slider-text-inner .desc {
         position: relative;
         bottom: auto;
         left: auto;
-        padding: 20px 15px;
+        width: 100%;
+        margin-top: 0;
+        padding: 18px 0 6px 0;
+        background: #fff;
     }
     #pwe-hero .flexslider .slider-text > .slider-text-inner h6 {
         font-size: 26px;
@@ -2390,6 +2436,13 @@ ol.comment-list li .children li {
     #pwe-hero .flexslider .slider-text > .slider-text-inner h1 {
         font-size: 24px;
         line-height: 1.25em;
+    }
+    .services-section.pt-90 {
+        padding-top: 12px;
+    }
+    .testimonials .section-head .story-nav,
+    .testimonials .section-head .owl-nav {
+        margin-bottom: 14px;
     }
     .banner-head-padding {
         padding-top: 40px;
