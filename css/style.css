@@ -767,7 +767,15 @@ input[type="checkbox"] {
     .about-watermark {
         left: 50%;
         bottom: 28px;
-        font-size: 22px;
+        width: 100%;
+        padding: 0 12px;
+        box-sizing: border-box;
+        text-align: center;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        font-size: clamp(18px, 6vw, 24px);
+        letter-spacing: 1px;
+        color: rgba(0, 0, 0, 0.14);
     }
 }
 #pwe-hero {
