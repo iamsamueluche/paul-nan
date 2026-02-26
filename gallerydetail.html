@@ -64,7 +64,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-12"> <span class="heading-meta">.gallery</span>
-                                    <h2 class="pwe-heading animate-box" data-animate-effect="fadeInLeft">Pre-wedding Photos</h2>
+                                    <h2 id="gallery-detail-title" class="pwe-heading animate-box" data-animate-effect="fadeInLeft">Pre-wedding Photos</h2>
                                 </div>
                             </div>
                         </div>
@@ -79,12 +79,11 @@
                             <div class="btn-contact" style="margin-bottom: 20px;">
                                 <a href="gallery.html"><span>Back to Gallery</span></a>
                             </div>
-                            <p>Quality vestibulum mollis accumsan ultricies. Sed urna velit, maximus eu tellus sit amet, condimentum dictum erat. Sed dolor ipsum, luctus quis est eu, vestibulum tincidunt est. Donec egestas aliquet nunc, ac egestas sapien fermentum in. Sed volutpat ac mi faucibus convallis. Praesent facilisis lobortis tellus. Donec laoreet, erat in sagittis dictum, enim enim dignissim sapien.</p>
+                            <p id="gallery-detail-content">These are the pre-wedding pictures of Paul and Nankam, capturing their love story before the big day. Their outfit choices blend elegance and personality, with coordinated colors and timeless styling that highlight their chemistry beautifully.</p>
                         </div>
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
-                            <p><b>PRELUDE MUSIC :</b> Paul and Nankam
-                                <br> <b>Wedding Photographer :</b> Janet Lewis
-                                <br> <b>Location :</b> Lakewood WA, USA
+                            <p><b>Wedding Photographer :</b> SHOEBOX
+                                <br> <b>Location :</b> Abuja
                             </p>
                         </div>
                     </div>
@@ -245,6 +244,37 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        (function () {
+            var galleryTypes = {
+                pre: {
+                    title: "Pre-wedding Photos",
+                    content: "These are the pre-wedding pictures of Paul and Nankam, capturing their love story before the big day. Their outfit choices blend elegance and personality, with coordinated colors and timeless styling that highlight their chemistry beautifully."
+                },
+                trad: {
+                    title: "Trad Wedding Photos",
+                    content: "These are the traditional wedding pictures of Paul and Nankam, celebrating culture, family, and heritage. Their traditional outfits are rich, vibrant, and beautifully styled, reflecting both elegance and pride in their roots."
+                },
+                court: {
+                    title: "Court Wedding Photos",
+                    content: "These are the court wedding pictures of Paul and Nankam, marking their official union in a simple and meaningful setting. Their outfits are clean, classy, and refined, reflecting the calm beauty of this special milestone."
+                }
+            };
+
+            var params = new URLSearchParams(window.location.search);
+            var type = params.get("type") || "pre";
+            var selected = galleryTypes[type] || galleryTypes.pre;
+            var titleEl = document.getElementById("gallery-detail-title");
+            var contentEl = document.getElementById("gallery-detail-content");
+
+            if (titleEl) {
+                titleEl.textContent = selected.title;
+            }
+            if (contentEl) {
+                contentEl.textContent = selected.content;
+            }
+        })();
+    </script>
 </body>
 
 <!-- Mirrored from duruthemes.com/demo/html/pwe/multipage/gallerydetail.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Mar 2024 10:27:02 GMT -->
