@@ -1084,33 +1084,45 @@ body.offcanvason .pwe-nav-toggle {
     color: #b9925e;
 }
 .ceremony-team-board {
-    background: #fff;
-    border: 1px solid #e8decf;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-    padding: 34px 26px;
+    background: linear-gradient(180deg, #fffdf8 0%, #fff 100%);
+    border: 1px solid #e7d7be;
+    border-radius: 18px;
+    box-shadow: 0 16px 40px rgba(24, 12, 0, 0.08);
+    padding: 34px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 34px;
-    row-gap: 20px;
+    row-gap: 24px;
+}
+.ceremony-team-column {
+    background: #fff;
+    border: 1px solid #f0e6d8;
+    border-radius: 14px;
+    padding: 24px 22px;
+    box-shadow: 0 8px 20px rgba(20, 10, 2, 0.05);
 }
 .ceremony-team-column h4 {
     font-family: 'Nunito Sans', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 12px;
+    letter-spacing: 1.4px;
+    margin-bottom: 14px;
+    color: #7c5b2c;
+    border-bottom: 1px solid #efe2cf;
+    padding-bottom: 10px;
 }
 .ceremony-team-role {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     color: #000;
+    font-size: 16px;
 }
 .ceremony-team-list {
-    margin: 0 0 16px 20px;
+    margin: 0 0 16px 22px;
     padding: 0;
 }
 .ceremony-team-list li {
-    margin-bottom: 6px;
-    color: #555;
-    line-height: 1.35em;
+    margin-bottom: 7px;
+    color: #4b463e;
+    line-height: 1.45em;
 }
 .ceremony-team-list.plain-list {
     list-style: none;
@@ -1125,6 +1137,9 @@ body.offcanvason .pwe-nav-toggle {
     .ceremony-team-board {
         padding: 24px 18px;
         column-gap: 0;
+    }
+    .ceremony-team-column {
+        padding: 20px 18px;
     }
 }
 

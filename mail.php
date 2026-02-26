@@ -42,13 +42,17 @@ if (@file_put_contents($logFile, $logLine, FILE_APPEND | LOCK_EX) === false) {
 }
 
 // Optional mail dispatch for servers configured with PHP mail().
-$to = 'paulandnankam@wedding.com';
+$to = [
+    'Paulkoloboi@yahoo.com',
+    'nankamabu12@gmail.com',
+    'samueluche8@gmail.com'
+];
 $mailSubject = 'New RSVP: ' . $subject;
 $mailBody = "Name: {$name}\nEmail: {$email}\nSubject: {$subject}\n\nMessage:\n{$message}\n";
 $headers = 'From: noreply@' . ($_SERVER['SERVER_NAME'] ?? 'localhost') . "\r\n" .
            'Reply-To: ' . $email . "\r\n" .
            'Content-Type: text/plain; charset=UTF-8';
 
-@mail($to, $mailSubject, $mailBody, $headers);
+@mail(implode(',', $to), $mailSubject, $mailBody, $headers);
 
 echo 'Your RSVP was sent successfully.';
