@@ -735,6 +735,26 @@ input[type="checkbox"] {
     -o-transition: 0.5s;
     transition: 0.5s;
 }
+.about-watermark-wrap {
+    position: relative;
+}
+.about-watermark-wrap .about-section {
+    position: relative;
+}
+.about-watermark {
+    position: absolute;
+    left: calc(50% - 40px);
+    bottom: 48px;
+    z-index: 1;
+    pointer-events: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: clamp(24px, 4vw, 48px);
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.08);
+    transform: none;
+    text-transform: uppercase;
+}
 @media screen and (max-width: 1200px) {
     #pwe-main {
         width: 70%;
@@ -743,6 +763,11 @@ input[type="checkbox"] {
 @media screen and (max-width: 768px) {
     #pwe-main {
         width: 100%;
+    }
+    .about-watermark {
+        left: 50%;
+        bottom: 28px;
+        font-size: 22px;
     }
 }
 #pwe-hero {
@@ -1618,6 +1643,33 @@ button.mfp-arrow {
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1.4em;
+}
+.wedding-detail-row {
+    display: flex;
+    align-items: stretch;
+}
+.wedding-detail-row .detail-media-col,
+.wedding-detail-row .detail-content-col {
+    display: flex;
+    flex-direction: column;
+}
+.wedding-detail-row .wedding-detail-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+.wedding-detail-row .detail-content-col {
+    justify-content: center;
+}
+@media screen and (max-width: 768px) {
+    .wedding-detail-row {
+        display: block;
+    }
+    .wedding-detail-row .wedding-detail-image {
+        height: auto;
+        margin-bottom: 30px;
+    }
 }
 .blog-entry {
     width: 100%;
