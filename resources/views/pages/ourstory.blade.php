@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<!-- Mirrored from duruthemes.com/demo/html/pwe/multipage//ourstory by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Mar 2024 10:26:53 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Paul &amp; Nankam Wedding</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="{{ asset('images/favicon.webp') }}" />
+    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status"><div class="preloader-position loader"> <span></span> </div></div>
+    </div>
+    <!-- Content -->
+    <div id="pwe-page"> 
+       <a href="#" class="js-pwe-nav-toggle pwe-nav-toggle"><i></i></a>
+        <!-- Sidebar Section -->
+        <aside id="pwe-aside">
+            <!-- Logo -->
+            <h1 id="pwe-logo">
+                <a href="{{ url('/') }}">PN<span>Paul <small>&amp;</small> Nankam</span></a>
+            </h1>
+            <!-- Menu -->
+            <nav id="pwe-main-menu">
+                <ul>
+                    <li><a href="{{ url('/') }}">Home</a></li>
+                    <li class="pwe-active"><a href="{{ url('ourstory') }}">Our Story</a></li>
+                    <li><a href="{{ url('programme') }}">Programme</a></li>
+                    <li><a href="{{ url('gallery') }}">Gallery</a></li>
+                    <li><a href="{{ url('weddingdetails') }}">Wedding Details</a></li>
+                    <li><a href="{{ url('rsvp') }}">RSVP</a></li>
+                </ul>
+            </nav>
+            <!-- Sidebar Footer -->
+            <div class="pwe-footer">
+                <div class="separator"></div>
+                <p>Wedding Day Celebration
+                    <br />Paulkoloboi@yahoo.com<br>nankamabu12@gmail.com
+                </p>
+                <div class="social"> <a href="#"><i class="ti-facebook"></i></a> <a href="#"><i class="ti-twitter-alt"></i></a> <a href="#"><i class="ti-instagram"></i></a> </div>
+            </div>
+        </aside>
+        <!-- Main Section -->
+        <div id="pwe-main" class="about-watermark-wrap">
+            <!-- Banner Title -->
+            <div class="banner-container">
+                <div class="banner-img"> <img class="banner-img-width" src="{{ asset('images/topbanner.webp') }}" alt=""> </div>
+                <div class="banner-head">
+                    <div class="banner-head-padding banner-head-margin">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12"> <span class="heading-meta">.our story</span>
+                                    <h2 class="pwe-heading animate-box" data-animate-effect="fadeInLeft">About The Couple</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About Us -->
+            <div class="about-section pt-0 pb-60">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 text-center"> <img src="{{ asset('images/Nan-Paul.webp') }}" class="img-fluid mb-30 animate-box" data-animate-effect="fadeInLeft" alt="">
+                            <h4 class="pwe-about-subheading animate-box" data-animate-effect="fadeInUp">Paul &amp; Nankam</h4>
+                        </div>
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                            <h3 class="pwe-about-heading">Paul and Nankam</h3>
+                            <h4 class="pwe-about-subheading">What began as simple banter among friends blossomed into true friendship, laughter, growth, and faith.</h4>
+                            <p>Paul is truly a kind-hearted soul, my safe space and where I can fully be myself. He is sincere, faith-driven and confident.</p>
+                            <p>Graceful, kind, and radiant. Nankam carries warmth wherever she goes. Her compassion, intelligence, and joyful heart make it easy to love her.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-watermark">#AnotherBanger</div>
+            </div>
+            <!-- Team -->
+            <div class="team-section team pt-90 pb-90 bg-pink">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 mb-30"> <span class="heading-meta">.our story</span>
+                            <h2 class="pwe-heading mb-30 animate-box" data-animate-effect="fadeInLeft">Wedding Ceremony Team</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="ceremony-team-board">
+                                <div class="ceremony-team-column">
+                                    <h4>BRIDAL TRAIN</h4>
+                                    <p class="ceremony-team-role"><b>Chief brides maid :</b> Favour Bala</p>
+                                    <ol class="ceremony-team-list">
+                                        <li>Malcit Barau</li>
+                                        <li>Fabyen Tonga</li>
+                                        <li>Glory Deshi</li>
+                                        <li>Soma</li>
+                                        <li>Blessing Gopep</li>
+                                        <li>Chika Okpala</li>
+                                        <li>Manmak Zingbong</li>
+                                        <li>Gift Gushen</li>
+                                        <li>Jessica</li>
+                                        <li>Paz Emmanuel</li>
+                                    </ol>
+                                    <p class="ceremony-team-role"><b>Little bride:</b></p>
+                                    <ul class="ceremony-team-list plain-list">
+                                        <li>Zuriel Abalaka</li>
+                                        <li>Shirel Davis</li>
+                                    </ul>
+                                </div>
+                                <div class="ceremony-team-column">
+                                    <h4>GROOM'S TEAM</h4>
+                                    <p class="ceremony-team-role"><b>Best Man:</b> Toma Yakubu</p>
+                                    <p class="ceremony-team-role"><b>Grooms Men.</b></p>
+                                    <ul class="ceremony-team-list plain-list">
+                                        <li>AMEH JONATHAN</li>
+                                        <li>UNEKWUOJO OLUWASEUN ELIAS</li>
+                                        <li>Jason Bangoji</li>
+                                        <li>Onyekachi Okengwu</li>
+                                        <li>Victor Odiba</li>
+                                        <li>Maduka Eric</li>
+                                        <li>Moses Akitei</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Clients -->
+            <div class="clients-section clients">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 owl-carousel owl-theme">
+                            <div class="client-logo">
+                                <a href="#"><img src="{{ asset('images/clients/1.webp') }}" alt=""></a>
+                            </div>
+                            <div class="client-logo">
+                                <a href="#"><img src="{{ asset('images/clients/2.webp') }}" alt=""></a>
+                            </div>
+                            <div class="client-logo">
+                                <a href="#"><img src="{{ asset('images/clients/3.webp') }}" alt=""></a>
+                            </div></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div id="pwe-footer2">
+                <div class="pwe-narrow-content">
+                    <div class="row">
+                        <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+                            <h2>
+                                <a href="{{ url('/') }}">PN<span>Paul <small>&amp;</small> Nankam</span></a>
+                            </h2>
+                            <div class="social"> <a href="#"><i class="ti-facebook"></i></a> <a href="#"><i class="ti-twitter-alt"></i></a> <a href="#"><i class="ti-instagram"></i></a> </div>
+                        </div>
+                        <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+                            <h6>Celebrate</h6>
+                            <p>Wedding Day Celebration</p>
+                            <h6>Email</h6>
+                            <p>Paulkoloboi@yahoo.com<br>nankamabu12@gmail.com</p>
+                        </div>
+                        <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+                            <h6>Address</h6>
+                            <p>Special Appreciation
+                                <br />Thank you for celebrating with us
+                            </p>
+                            <p class="copyright">&copy; 2026. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/modernizr-2.6.2.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.easing.1.3.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.flexslider-min.js') }}"></script>
+    <script src="{{ asset('js/sticky-kit.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
+</body>
+
+<!-- Mirrored from duruthemes.com/demo/html/pwe/multipage//ourstory by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Mar 2024 10:26:55 GMT -->
+</html>
+
+
+
+
+
